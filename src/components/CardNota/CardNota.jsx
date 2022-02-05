@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import "./estilo.css";
+import {ReactComponent as DeleteSVG} from "../../assets/img/delete.svg";
+
 class CardNota extends Component {
+
+    constructor(props) {
+        super(props);
+        this.texto = ""
+        this.titulo = ""
+        this.indice = 0
+    }
 
     apagar() {
         const indice = this.props.indice;
